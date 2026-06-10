@@ -1,0 +1,100 @@
+body{
+    background-color: black;
+}
+.div-1{
+    
+    border-style: solid;
+    border-color: white;
+    border-radius: 55px;
+    align-items: center;
+    text-align: center;
+}
+.div-2{
+    justify-content:center;
+    flex-direction:column;
+    display:flex;
+}
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:3em;
+    color: white;
+}
+li{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:2rem;
+    color: white;
+}
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.rodape a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    transition: transform 0.7s;
+}
+.rodape a:hover{
+    border-bottom-color: white;
+    transform: scale(1.1);
+}
+a{
+    color: white;
+    font-size: 2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.div-3-row{
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin: 2rem 0 0 2rem;
+}
+.div-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 0;
+    width: 220px;
+    min-height: 120px;
+    border: 2px solid white;
+    border-radius: 55px;
+    transition: height 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+.div-3 h1{
+    font-size: 1.8rem;
+    margin: 0 0 0.6rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.div-3:hover{
+    height: 200px;
+    transform: scale(1.02);
+}
+.saiba-mais{
+    display: none;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border: solid white 2px;
+    border-radius: 55px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: red;
+    padding: 0.5rem;
+}
+.div-3:hover .saiba-mais{
+    display: block;
+    opacity: 1;
+}
