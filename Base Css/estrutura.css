@@ -138,7 +138,11 @@ p{
 article{
     display: flex;
     gap: 10px;
+<<<<<<< HEAD
     justify-content: column;
+=======
+    justify-content: center;
+>>>>>>> 99fd62efdce3b0794aecb47a639f9a5987f89e44
     width: 700px;
     height: 420px;
     border-style: solid;
@@ -174,6 +178,7 @@ article{
     justify-content: center;
     align-items: center;
     /*flex-direction: column;*/
+<<<<<<< HEAD
     margin: 10px;
     gap: 10px;
 }
@@ -202,4 +207,6 @@ footer{
 .div-characters:hover p{
     font-size: 1.2rem;
     transition: font-size 0.5s ease;
+=======
+>>>>>>> 99fd62efdce3b0794aecb47a639f9a5987f89e44
 }
