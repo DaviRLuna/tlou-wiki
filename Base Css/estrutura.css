@@ -223,7 +223,6 @@ footer{
 }
 .div-history h1{
     color: red;
-
 }
 .div-teste{
     display: flex;
@@ -235,14 +234,7 @@ footer{
     margin-bottom: 18px;
     height: 200px;
 }
-.div-teste p{
+
+.text-history {
     font-size: 0rem;
-}
-.div-teste:hover{
-    height: auto;
-    transition: 1s ease;
-}
-.div-teste:hover p{
-    font-size: 1.2rem;
-    transition: 1s ease;
 }
