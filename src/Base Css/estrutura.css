@@ -1,6 +1,9 @@
 body{
     background-color: black;
     height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp2243867.jpg);
+    background-repeat: no-repeat;
+    background-attachment: cover;
 }
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -12,11 +15,11 @@ li{
     color: rgb(248, 248, 248);
 }
 a{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 2rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 p{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     font-family:'Pliant', sans-serif;
 }
@@ -26,20 +29,29 @@ footer{
     align-items:center;
     height: 100px;
     width:auto;
-    border: 4px solid white;
+    border: 4px solid rgb(0, 0, 0);
     gap: 20px;
+    background-color: rgba(177, 177, 177, 0.425);
+    backdrop-filter: blur(50px);
+
+}
+.img{
+    border-radius: 55px;
 }
 /*div pai, utilizada para fazer a borda e ser a caixa principal*/
 
 .pai{
+    background-color: rgba(177, 177, 177, 0.425);
     display: flex;
-    flex-direction: column;
-    border: 4px solid white;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 4px solid rgb(0, 0, 0);
     border-radius: 55px;
     align-items: center;
     text-align: center;
     margin-bottom: 18px;
     width: 100%;
+    backdrop-filter: blur(50px);
 }
 /*usado para organizar e decorar os links internos e externos da pagina*/
 .cabeçalho{
@@ -80,6 +92,9 @@ footer{
     width: 700px;
     gap: 10px;
     margin: 10px;
+    background-color: rgba(177, 177, 177, 0.425);
+    backdrop-filter: blur(50px);
+
 }
 
 /*Caixa usada para manter o "resumo" fixo no centro da pagina*/
@@ -95,13 +110,15 @@ footer{
 /*caixa usada para fazer os "envelopes" dos personagens*/
 .div-characters{
     border-style: solid;
-    border-color: white;
+    border-color: rgb(0, 0, 0);
     border-radius: 10px;
     align-items: center;
     text-align: center;
     height: auto;
     width: 250px;
     margin: 10px;
+    background-color: rgba(177, 177, 177, 0.425);
+    backdrop-filter: blur(50px);
 }
 
 /*animação para caso passe o mouse por cima, o "envelope" ira abrir*/
@@ -159,14 +176,11 @@ footer{
     overflow: hidden;
     gap: 1rem;
 }
-<<<<<<< HEAD
 
 /*caixa usada para criar a borda e ajustar os elementos dentro dela*/
-=======
 .div-history h1{
     color: red;
 }
->>>>>>> ab03dbb37324d7cb519ac1df99f0755dd02401c8
 .div-teste{
     display: flex;
     flex-direction: column;
@@ -194,4 +208,3 @@ footer{
 .text-history {
     font-size: 0rem;
 }
->>>>>>> ab03dbb37324d7cb519ac1df99f0755dd02401c8
