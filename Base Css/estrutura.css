@@ -159,8 +159,14 @@ footer{
     overflow: hidden;
     gap: 1rem;
 }
+<<<<<<< HEAD
 
 /*caixa usada para criar a borda e ajustar os elementos dentro dela*/
+=======
+.div-history h1{
+    color: red;
+}
+>>>>>>> ab03dbb37324d7cb519ac1df99f0755dd02401c8
 .div-teste{
     display: flex;
     flex-direction: column;
@@ -171,6 +177,7 @@ footer{
     margin-bottom: 18px;
     height: 200px;
 }
+<<<<<<< HEAD
 .div-teste:hover{
     height: auto;
     transition: 1s ease;
@@ -182,3 +189,9 @@ footer{
     font-size: 1.2rem;
     transition: 1s ease;
 }
+=======
+
+.text-history {
+    font-size: 0rem;
+}
+>>>>>>> ab03dbb37324d7cb519ac1df99f0755dd02401c8
