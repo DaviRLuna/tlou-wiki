@@ -2,7 +2,36 @@ body{
     background-color: black;
     height: 100vh;
 }
-.div-1{
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:3rem;
+    color: rgb(255, 0, 0);}
+li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:2rem;
+    color: rgb(248, 248, 248);
+}
+a{
+    color: white;
+    font-size: 2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family:'Pliant', sans-serif;
+}
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100px;
+    width:auto;
+    border: 4px solid white;
+    gap: 20px;
+}
+/*div pai, utilizada para fazer a borda e ser a caixa principal*/
+
+.pai{
     display: flex;
     flex-direction: column;
     border: 4px solid white;
@@ -10,26 +39,9 @@ body{
     align-items: center;
     text-align: center;
     margin-bottom: 18px;
+    width: 100%;
 }
-.div-1 h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3em;
-}
-.div-2{
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-}
-h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:3em;
-    color: rgb(255, 0, 0);
-}
-li{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:2rem;
-    color: rgb(248, 248, 248);
-}
+/*usado para organizar e decorar os links internos e externos da pagina*/
 .cabeçalho{
     display: flex;
     flex-direction: row;
@@ -40,7 +52,10 @@ li{
     margin-top: 1.5rem;
     flex-wrap: nowrap;
     width: auto;
+    height: auto;
+    font-size: 3rem;
 }
+/*decorando e preparando os links para uma transição como mouse*/
 .cabeçalho a{
     color: white;
     text-decoration: none;
@@ -49,65 +64,12 @@ li{
     display: inline-block;
     transition: transform 0.7s;
 }
+/*pronto! toda vez que passar o mouse por cima, o tamanho ira aumentar*/
 .cabeçalho a:hover{
     border-bottom-color: white;
-    transform: scale(1.1);
-}
-a{
-    color: white;
-    font-size: 2rem;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.div-3-row{
-    display: flex;
-    gap: 1rem;
-    align-items: stretch;
-    justify-content: center;
-    margin: 2rem 1rem;
-    flex-wrap: wrap;
-}
-.div-3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    margin: 0;
-    width: 890px;
-    height: 420px;
-    border: 4px solid white;
-    border-radius: 55px;
-    overflow: hidden;
-    gap: 1rem;
-}
-.div-3 h1{
-    font-size: 1.8rem;
-    margin: 0 0 0.6rem;
-    text-align: center;
-    line-height: 1.2;
-    flex-shrink: 0;
-}
-.div-3:hover{
-    height: 200px;
-    transform: scale(1.02);
-}
-.saiba-mais{
-    display: none;
-    margin-top: 1rem;
-    color: white;
-    font-size: 1.2rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border: 3px solid white;
-    border-radius: 55px;
-    font-family:pliant;
-    background-color: red;
-    padding: 0.5rem;
-}
-.div-3:hover .saiba-mais{
-    display: block;
-    opacity: 1;
-}
+    transform: scale(1.1);}
+
+/*caixa usado para o resumo*/
 .div-explicacao{
     border-style: solid;
     border-color: rgb(0, 0, 0);
@@ -119,98 +81,74 @@ a{
     gap: 10px;
     margin: 10px;
 }
-.div-img{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.div-text{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 10px;
-}
-p{
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-    font-family:'Pliant', sans-serif;
-}
-.destacar{
-    color: red;
-    font-size: 1.3rem;
-}
 
-article{
+/*Caixa usada para manter o "resumo" fixo no centro da pagina*/
+.div-4{
     display: flex;
-    gap: 10px;
-    justify-content: column;
     justify-content: center;
-    width: 700px;
-    height: 420px;
-    border-style: solid;
-    border-radius: 55px;
-    float: right;
-    
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
 }
 
+/*caixa usada para fazer os "envelopes" dos personagens*/
 .div-characters{
     border-style: solid;
     border-color: white;
     border-radius: 10px;
     align-items: center;
     text-align: center;
-    height: 200px;
+    height: auto;
     width: 250px;
     margin: 10px;
 }
-.div-characters:hover{
-    width: 1250px;
-    transition: width 0.5s ease;
-}
-.div-characters:hover .img-src{
-    display: flex;
-    flex-direction: row;}
-.div-central{
-    border: 2px solid white;
-    width: 100%;
-    height: 100%;
-}
-.div-4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*flex-direction: column;*/
-    margin: 10px;
-    gap: 10px;
-}
-footer{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height: 100px;
-    width:1250px;
-    border: 4px solid white;
-    gap: 20px;
 
-}
+/*animação para caso passe o mouse por cima, o "envelope" ira abrir*/
 .div-characters:hover{
+    width: auto;
+    transition: 1s ease;
     display: none;
     gap: 10px;
     display:flex;
     flex-direction: row;
     border-radius: 10px;
 }
+
+/*Manter a imagem fixa no canto esquerdo*/
+.div-characters:hover .img-src{
+    display: flex;
+    flex-direction: row;}
+
+/*Não deixar com que a mensagem fique aparecendo sem que o usuário passe o mouse por cima*/
 .div-characters p{
     color:white;
     font-size: 0rem;
     font-family:'Pliant', sans-serif;
 }
+
+ /*agora sim, toda vez que o usuário passar o mouse por cima, a mensagem vai aparecer*/
 .div-characters:hover p{
     font-size: 1.2rem;
     transition: font-size 1s ease;
 }
+
+.div-characters h1{
+    color:rgb(255, 1, 1);
+    font-size: 0rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ /*agora sim, toda vez que o usuário passar o mouse por cima, a mensagem vai aparecer*/
+.div-characters:hover h1{
+    font-size: 3rem;
+    transition: 1s ease;
+}
+
+/*caixa semelhante as anteriores, porém foi feita exclusivamente para a pag hist. Ela mantem as coisas dessa pagina em ordem*/
 .div-history{
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
@@ -221,10 +159,8 @@ footer{
     overflow: hidden;
     gap: 1rem;
 }
-.div-history h1{
-    color: red;
 
-}
+/*caixa usada para criar a borda e ajustar os elementos dentro dela*/
 .div-teste{
     display: flex;
     flex-direction: column;
@@ -235,12 +171,12 @@ footer{
     margin-bottom: 18px;
     height: 200px;
 }
-.div-teste p{
-    font-size: 0rem;
-}
 .div-teste:hover{
     height: auto;
     transition: 1s ease;
+}
+.div-teste p{
+    font-size: 0rem;
 }
 .div-teste:hover p{
     font-size: 1.2rem;
