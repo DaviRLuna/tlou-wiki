@@ -15,12 +15,13 @@ li{
     color: rgb(248, 248, 248);
 }
 a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 253, 253);
     font-size: 2rem;
     font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 p{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
     font-size: 1.2rem;
     font-family:'Pliant', sans-serif;
 }
@@ -36,9 +37,6 @@ footer{
     backdrop-filter: blur(50px);
 
 }
-.img{
-    border-radius: 55px;
-}
 /*div pai, utilizada para fazer a borda e ser a caixa principal*/
 
 .pai{
@@ -47,15 +45,15 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     border: 4px solid rgb(0, 0, 0);
-    border-raius: 55px;
     align-items: center;
     text-align: center;
     margin-bottom: 18px;
     width: 100%;
     backdrop-filter: blur(50px);
+    height: 200px;
 }
 /*usado para organizar e decorar os links internos e externos da pagina*/
-.cabeçalho{
+.nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -69,7 +67,7 @@ footer{
     font-size: 3rem;
 }
 /*decorando e preparando os links para uma transição como mouse*/
-.cabeçalho a{
+.nav a{
     color: white;
     text-decoration: none;
     font-size: 2rem;
@@ -79,7 +77,7 @@ footer{
     font-size: 1.5rem;
 }
 /*pronto! toda vez que passar o mouse por cima, o tamanho ira aumentar*/
-.cabeçalho a:hover{
+.nav a:hover{
     border-bottom-color: white;
     transform: scale(1.1);}
 
@@ -137,7 +135,8 @@ footer{
 /*Manter a imagem fixa no canto esquerdo*/
 .div-characters:hover .img-src{
     display: flex;
-    flex-direction: row;}
+    flex-direction: row;
+    width: 250px ;}
 
 /*Não deixar com que a mensagem fique aparecendo sem que o usuário passe o mouse por cima*/
 .div-characters p{
@@ -164,49 +163,61 @@ footer{
     transition: 1s ease;
 }
 
-/*caixa semelhante as anteriores, porém foi feita exclusivamente para a pag hist. Ela mantem as coisas dessa pagina em ordem*/
-.div-history{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    margin: 0;
-    width: auto;
-    max-width:1250px;
-    height: auto;
-    overflow: hidden;
-    gap: 1rem;
-}
-
-/*caixa usada para criar a borda e ajustar os elementos dentro dela*/
-.div-history h1{
-    color: red;
-}
-.div-teste{
-    display: flex;
-    flex-direction: column;
-    border: 4px solid white;
-    border-radius: 55px;
+.div-Credits{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
     align-items: center;
     text-align: center;
-    margin-bottom: 18px;
     height: 200px;
+    width: 275px;
+    margin: 10px;
+    background-color: rgba(177, 177, 177, 0.425);
+    backdrop-filter: blur(50px);
 }
-<<<<<<< HEAD
-.div-teste:hover{
+.div-Credits:hover{
+    width: 100%;
     height: auto;
     transition: 1s ease;
 }
-.div-teste p{
+.div-Credits p{
     font-size: 0rem;
 }
-.div-teste:hover p{
-    font-size: 1.2rem;
+.div-Credits:hover p{
+    font-size: 1.4rem;
+    transition: 1s;
+}
+.div-Credits h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top-bar{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 275px;
+    margin: 10px;
+    background-color: rgba(177, 177, 177, 0.425);
+    backdrop-filter: blur(50px);
+}
+.top-bar a{
+    font-size: 0rem;
+    text-decoration: none;
+}
+.top-bar h1{
+    font-size: 3rem;
+}
+.top-bar:hover{
+    width: 100%;
+    height: auto;
     transition: 1s ease;
 }
-=======
-
-.text-history {
-    font-size: 0rem;
+.top-bar:hover a{
+    font-size:1.5rem ;
+    transition: 2s ease;
 }
